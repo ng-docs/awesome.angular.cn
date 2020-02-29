@@ -91,14 +91,14 @@ We also want to have a <code>framework</code> folder and a <code>shared</code> f
 
 </li>
 </ul>
-<p translation-result="on">我们这个架构的大纲是这样的。</p><p translation-result="on"><img src="/assets/content/articles/ngx-blog/images/folder.png" alt="架构大纲"></p><p translation-result="on">接下来，让我们来看一个很常见的用户界面（UI）。</p><p translation-origin="off">That’s the outline of our architecture.</p>
+<p translation-result="on">我们这个架构的大纲是这样的。</p><p translation-origin="off">That’s the outline of our architecture.</p>
 
+<p translation-result="on">接下来，让我们来看一个很常见的用户界面（UI）。</p><p translation-origin="off"><img src="/assets/content/articles/ngx-blog/images/folder.png" alt="架构大纲"></p>
+<p translation-result="on">大多数应用都有一个导航、一个标题，和一些名叫容器（<code>container</code>）或视图（<code>view</code>）的东西。</p><p translation-origin="off">Now let's have a look at a very common user interface (UI).</p>
 
-<p translation-result="on">大多数应用都有一个导航、一个标题，和一些名叫容器（<code>container</code>）或视图（<code>view</code>）的东西。</p><p translation-result="on"><img src="/assets/content/articles/ngx-blog/images/architecture.png" alt="架构"></p><p translation-origin="off">Now let's have a look at a very common user interface (UI).</p>
+<p translation-origin="off">Most of the apps have a navigation, a header and something very often called "container" or "view".</p>
 
-<p translation-result="on">这些部分加起来被称为<strong>应用外壳（app shell）</strong>。应用外壳是应用中非常重要的一部分。当你开始考虑使用渐进式Web应用（PWA）时，几乎到处都能看到它，并且是代码的重要组成部分。</p><p translation-origin="off">Most of the apps have a navigation, a header and something very often called "container" or "view".</p>
-
-
+<p translation-result="on">这些部分加起来被称为<strong>应用外壳（app shell）</strong>。应用外壳是应用中非常重要的一部分。当你开始考虑使用渐进式Web应用（PWA）时，几乎到处都能看到它，并且是代码的重要组成部分。</p><p translation-origin="off"><img src="/assets/content/articles/ngx-blog/images/architecture.png" alt="架构"></p>
 <p translation-result="on">那么，我们应该把应用外壳放到什么位置？说对了！就放到 <code>framework</code> 文件夹中，因为它是一种通用的功能。</p><p translation-origin="off">Those parts together are known as the <strong>app shell</strong>.
 The app shell is a very important part of your app. It's visible almost everywher and an important piece of code when you start thinking about Progressive Web Applications (PWAs).</p>
 
@@ -107,10 +107,10 @@ Right: in <code>framework</code> folder because it's a generaly used functionali
 
 <h4 id="cut-your-code-into-modules" translation-result="on">把代码切分成模块<a href="#cut-your-code-into-modules" title="点击链接到此标题" class="header-link" aria-hidden="true"><i class="material-icons">link</i></a></h4><h4 translation-origin="off">Cut your code into modules</h4>
 
-<p translation-result="on">接下来让我们谈谈这些 <code>features</code>。要了解应用的这些特性，看菜单/导航是一个很好的方式。</p><p translation-result="on"><img src="/assets/content/articles/ngx-blog/images/features.png" alt="特性清单"></p><p translation-result="on">这些条目都是特性模块。</p><p translation-origin="off">Next let's talk about the <code>features</code>.
+<p translation-result="on">接下来让我们谈谈这些 <code>features</code>。要了解应用的这些特性，看菜单/导航是一个很好的方式。</p><p translation-origin="off">Next let's talk about the <code>features</code>.
 To get the idea of the features of an app it's always a good strategy to look at the menu/navigation.</p>
 
-
+<p translation-result="on">这些条目都是特性模块。</p><p translation-origin="off"><img src="/assets/content/articles/ngx-blog/images/features.png" alt="特性清单"></p>
 <p translation-origin="off">All this entries are features.</p>
 
 <blockquote>
@@ -171,19 +171,19 @@ and they are reusable.</p>
 
 </li>
 </ol>
-<p><img src="/assets/content/articles/ngx-blog/images/components.png" alt="组件"></p>
-<p translation-result="on">这只是对连接和数据流的一个小小解释</p><p translation-result="on">我们有一个带有一些逻辑的容器组件，它拥有一些展现组件。展现组件需要的所有数据都会通过 @Input 装饰器传入。如果它们想和父组件交谈，就要利用 @Output 装饰器。如果我们要使用某个服务，就应该只在容器组件中使用它。</p><p translation-result="on"><img src="/assets/content/articles/ngx-blog/images/dataflow.png" alt="数据流"></p><p translation-origin="off">Just a small explanation of the connection and the data flow here</p>
+<p translation-result="on">这只是对连接和数据流的一个小小解释</p><p translation-origin="off"><img src="/assets/content/articles/ngx-blog/images/components.png" alt="组件"></p>
+<p translation-result="on">我们有一个带有一些逻辑的容器组件，它拥有一些展现组件。展现组件需要的所有数据都会通过 @Input 装饰器传入。如果它们想和父组件交谈，就要利用 @Output 装饰器。如果我们要使用某个服务，就应该只在容器组件中使用它。</p><p translation-origin="off">Just a small explanation of the connection and the data flow here</p>
 
-<p translation-result="on">为了识别出这些组件，我们来看一下这些模型。容器组件可以拆分成一些小部件。</p><p translation-result="on"><img src="/assets/content/articles/ngx-blog/images/container_component.png" alt="容器组件"></p><p translation-origin="off">We have a container component with some logic and it holds some presentational components.
+<p translation-origin="off">We have a container component with some logic and it holds some presentational components.
 All the data the presentational components need are passed through the @Input decorators. If they want to talk to their parents they would make use of an @Output decorator. If we use a service for some stuff we only use it in the container component.</p>
 
+<p translation-result="on">为了识别出这些组件，我们来看一下这些模型。容器组件可以拆分成一些小部件。</p><p translation-origin="off"><img src="/assets/content/articles/ngx-blog/images/dataflow.png" alt="数据流"></p>
+<p translation-origin="off">To identify these kind of components take a look at the mockups. Sections which can be splitted into smaller parts are container components.</p>
 
-<p translation-result="on">这些小部件可以作成展现组件</p><p translation-result="on"><img src="/assets/content/articles/ngx-blog/images/dump_component.png" alt="展现组件"></p><p translation-origin="off">To identify these kind of components take a look at the mockups. Sections which can be splitted into smaller parts are container components.</p>
-
-
+<p translation-result="on">这些小部件可以作成展现组件</p><p translation-origin="off"><img src="/assets/content/articles/ngx-blog/images/container_component.png" alt="容器组件"></p>
 <p translation-origin="off">Those small parts can be presentational components</p>
 
-
+<p><img src="/assets/content/articles/ngx-blog/images/dump_component.png" alt="展现组件"></p>
 <h4 id="reuse-code" translation-result="on">复用代码<a href="#reuse-code" title="点击链接到此标题" class="header-link" aria-hidden="true"><i class="material-icons">link</i></a></h4><h4 translation-origin="off">Reuse code</h4>
 
 <p translation-result="on">组件可以复用，但逻辑也可以复用。我们可以把逻辑移到服务中。</p><p translation-result="on">应用中几乎所有的逻辑都属于以下类别之一：</p><p translation-origin="off">Components can be reused but logic can be reused, too. We can relocate logic into services.</p>
@@ -232,9 +232,9 @@ And this means you have looooong imports.</p>
 <pre><code class="language-javascript"><span class="hljs-section">import</span> { <span class="hljs-attribute">MyService</span> } from <span class="hljs-string">"<span class="hljs-variable">@my</span>-logic/my-service/my.service"</span>;</code></pre>
 <h4 id="follow-the-style-guide" translation-result="on">遵循风格指南<a href="#follow-the-style-guide" title="点击链接到此标题" class="header-link" aria-hidden="true"><i class="material-icons">link</i></a></h4><h4 translation-origin="off">Follow the style guide</h4>
 
-<p translation-result="on">这就是 company 特性的目录结构</p><p translation-result="on"><img src="/assets/content/articles/ngx-blog/images/naming-conventions.png" alt="命名约定"></p><p translation-result="on">命名约定非常重要。</p><p translation-origin="off">that’s the structure of our companies feature</p>
+<p translation-result="on">这就是 company 特性的目录结构</p><p translation-origin="off">that’s the structure of our companies feature</p>
 
-
+<p translation-result="on">命名约定非常重要。</p><p translation-origin="off"><img src="/assets/content/articles/ngx-blog/images/naming-conventions.png" alt="命名约定"></p>
 <p translation-origin="off">The naming conventions is very important.</p>
 
 <ul>
@@ -293,6 +293,6 @@ that was not helpful at all</p>
 
   gtag('config', 'UA-159351998-1');
 </script>
-<script src="runtime.689ba4fd6cadb82c1ac2.js" defer=""></script><script src="polyfills.80bd341d56a2f827dd16.js" defer=""></script><script src="main.6dfabf352540508c012b.js" defer=""></script>
+<script src="runtime.689ba4fd6cadb82c1ac2.js" defer=""></script><script src="polyfills.80bd341d56a2f827dd16.js" defer=""></script><script src="main.59adfa196d089d43491c.js" defer=""></script>
 
 </body></html>
